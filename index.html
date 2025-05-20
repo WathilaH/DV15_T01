@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Name - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e0e0e0;
+      color: #000;
+    }
+    header, footer {
+      background: #ccc;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #000;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid black;
+      background: #b8b0ac;
+    }
+    nav img {
+      padding: 10px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin-left: auto;
+      margin-right: 20px;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    main {
+      text-align: center;
+      padding: 20px;
+    }
+    .controls {
+      margin: 20px;
+    }
+    .controls select, .controls button {
+      margin: 0 10px;
+      padding: 5px 10px;
+    }
+    .visual {
+      margin: 30px auto;
+      width: 80%;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .chart-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .chart {
+      flex: 1 1 45%;
+      background: white;
+      padding: 10px;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons button {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div style="padding: 10px; background: #8e8681;">
+      <strong>Logo</strong>
+    </div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="download.html">Download data</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h2>Web page Title</h2>
+    <p>&larr;Description&rarr;</p>
+    <div class="controls">
+      <select><option>Jurisdiction</option></select>
+      <select><option>Drug Type</option></select>
+      <button>Reset</button>
+    </div>
+  </header>
+  <main>
+    <div class="visual">
+      <h3>Drug Detections by State (2023)</h3>
+      <div style="height: 300px; background: #f2f2f2; border: 1px solid black;"></div>
+    </div>
+
+    <div class="chart-section">
+      <div class="chart">
+        <h4>Drug detection counts across four states in 2023 - Bar chart</h4>
+        <div style="height: 250px; background: #f2f2f2;"></div>
+      </div>
+      <div class="chart">
+        <h4>Drug detection counts across four states in 2023 - Sunburst chart</h4>
+        <div style="height: 250px; background: #f2f2f2;"></div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button>Tooltip</button>
+      <button>Note/Highlight</button>
+    </div>
+  </main>
+  <footer>
+    FOOTER
+  </footer>
+</body>
+</html>
